@@ -3,19 +3,12 @@ This project detects lane lines in road videos using classical computer vision t
 
 🛠️ Features
 Converts video frames to grayscale, applies Gaussian blur, and detects edges using Canny edge detector.
-
 Defines a region of interest focusing on the road area to reduce noise.
-
 Detects lane lines using Hough Line Transform (cv2.HoughLinesP).
-
 Classifies detected lines into left and right lanes based on slope.
-
 Merges close lane lines to reduce clutter.
-
 Calculates angles of lane lines and displays them on the video.
-
 Displays lane lines with color-coded overlays (green for left lane, red for right lane).
-
 Processes and displays the video in real-time with lane detection overlay.
 
 💻 Usage

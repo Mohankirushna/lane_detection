@@ -1,4 +1,4 @@
-#🚗 Lane Detection from Video using OpenCV and Python
+#🚗 Lane Detection from Video using OpenCV and Python#
 This project detects lane lines in road videos using classical computer vision techniques with OpenCV and NumPy. It identifies lane lines, calculates their angles, merges close lines, and overlays the lane markings with angle annotations on the video frames.
 
 🛠️ Features

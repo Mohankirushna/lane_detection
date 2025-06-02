@@ -22,12 +22,30 @@ Processes and displays the video in real-time with lane detection overlay.
 Update the input_video_path variable in the script with your own video file path.
 
 Run the script:
-
-bash
-Copy
-Edit
 python your_script_name.py
 The video window will open showing detected lanes and their angles overlaid.
 
 Press q to quit the video window anytime.
+
+⚙️ Requirements
+Python 3.x
+OpenCV (opencv-python)
+NumPy
+
+Install dependencies with:
+pip install opencv-python numpy
+
+🔧 How It Works
+Edge Detection: The script converts frames to grayscale, applies Gaussian blur, then detects edges using the Canny algorithm.
+Region of Interest: Focuses on a polygonal section where lanes are expected to appear, filtering out irrelevant areas.
+Lane Line Detection: Uses probabilistic Hough transform to detect line segments in the region of interest.
+Line Classification: Separates detected lines into left and right lanes by calculating their slopes.
+Line Merging: Combines close lines on each side to form cleaner lane lines.
+Angle Calculation: Calculates the angle of each lane line and displays the values near the lines on the video frame.
+
+
+🚩 Notes
+The region of interest polygon may need adjustment depending on your camera angle and video perspective.
+This is a basic lane detection approach and may not work perfectly in complex scenarios or with noisy videos.
+Works best with clearly visible lane markings and consistent lighting.
 

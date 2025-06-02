@@ -1,0 +1,33 @@
+🚗 Lane Detection from Video using OpenCV and Python
+This project detects lane lines in road videos using classical computer vision techniques with OpenCV and NumPy. It identifies lane lines, calculates their angles, merges close lines, and overlays the lane markings with angle annotations on the video frames.
+
+🛠️ Features
+Converts video frames to grayscale, applies Gaussian blur, and detects edges using Canny edge detector.
+
+Defines a region of interest focusing on the road area to reduce noise.
+
+Detects lane lines using Hough Line Transform (cv2.HoughLinesP).
+
+Classifies detected lines into left and right lanes based on slope.
+
+Merges close lane lines to reduce clutter.
+
+Calculates angles of lane lines and displays them on the video.
+
+Displays lane lines with color-coded overlays (green for left lane, red for right lane).
+
+Processes and displays the video in real-time with lane detection overlay.
+
+💻 Usage
+Update the input_video_path variable in the script with your own video file path.
+
+Run the script:
+
+bash
+Copy
+Edit
+python your_script_name.py
+The video window will open showing detected lanes and their angles overlaid.
+
+Press q to quit the video window anytime.
+
